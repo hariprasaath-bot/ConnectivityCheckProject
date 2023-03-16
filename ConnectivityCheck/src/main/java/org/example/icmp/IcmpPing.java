@@ -18,6 +18,7 @@ public class IcmpPing {
             {
                 if (outputLine.toLowerCase().contains("destination host unreachable") || outputLine.contains("Request timed out.") )
                 {
+                    System.out.println("ICMP Test: Failed");
                     return false;
                 }
             }
